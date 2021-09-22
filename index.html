@@ -16,7 +16,9 @@
   <!-- Custom fonts for this template -->
   <link href="vendor/fontawesome-free/css/all.min.css" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css?family=Varela+Round" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css?family=Nunito:200,200i,300,300i,400,400i,600,600i,700,700i,800,800i,900,900i" rel="stylesheet">
+  <link
+    href="https://fonts.googleapis.com/css?family=Nunito:200,200i,300,300i,400,400i,600,600i,700,700i,800,800i,900,900i"
+    rel="stylesheet">
 
   <!-- Custom styles for this template -->
   <link href="css/survey-form.min.css" rel="stylesheet">
@@ -29,7 +31,9 @@
   <nav class="navbar navbar-expand-lg navbar-light fixed-top" id="mainNav">
     <div class="container">
       <a class="navbar-brand js-scroll-trigger" href="#page-top">Lifestyle</a>
-      <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+      <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse"
+        data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false"
+        aria-label="Toggle navigation">
         Menu
         <i class="fas fa-bars"></i>
       </button>
@@ -62,20 +66,39 @@
     <div class="container">
       <div class="row">
         <div class="col-lg-8 mx-auto">
-          <h2 class="text-white mb-4">Lifestyle Survey</h2>
-          <p class="text-white-50">Answer a few questions about how you live life:</p>
+          <h2 class="text-white mb-4">Ice Cream</h2>
+          <p class="text-white-50">Answer a few questions about how you ice cream:</p>
           <form id="survey-form" class="text-white-50" style="text-align: left">
             <div class="form-group">
-              <label for="name">Name</label>
-              <input type="text" class="form-control" id="name" aria-describedby="nameHelp" placeholder="Enter name">
-              <small id="nameHelp" class="form-text text-muted">Your information will never be shared with anyone.</small>
-              <label for="email">Email</label>
-              <input type="email" class="form-control" id="email" placeholder="you@example.com">
-              <label for="number">Phone number</label>
-              <input type="number" class="form-control" id="number" placeholder="(000) 000-0000">
+              <label for="name" id="name-label">Name</label>
+              <input type="text" class="form-control" id="name" aria-describedby="nameHelp" required
+                placeholder="Enter name">
+              <small id="nameHelp" class="form-text text-muted">This form isn't connected to anything, so don't worry &#8212; your information isn't being stored!</small>
+              <label for="email" id="email-label">Email</label>
+              <input type="email" class="form-control" id="email" required placeholder="you@example.com">
+              <label for="number" id="number-label">Phone number</label>
+              <input type="number" class="form-control" id="number" min="10" max="10" placeholder="(000) 000-0000">
+              <label for="ice-cream" id="number-label">Do you like mint ice cream?</label>
+              <select class="form-control" id="dropdown">
+                <option value="yes">yes</optionvalue>
+                </option>
+                <option value="no">no</optionvalue>
+                </option>
+              </select>
             </div>
           </form>
         </div>
+      </div>
+      <div class="row mx-auto">
+        <p>Select your toppings</p>
+        <br>
+        <br>
+        <label for="chocolate-syrup-topping" id="toppings-label">Chocolate syrup
+        <input type="radio" class="form-control" id="chocolate-syrup-topping" value="chocolate"
+          name="chocolate" style="text-align: left!important;">
+        <label for="chocolate-syrup-topping" id="toppings-label">Espresso
+        <input type="radio" class="form-control" id="espresso-topping" value="espresso"
+          name="espresso">
       </div>
       <img src="img/ipad.png" class="img-fluid" alt="">
     </div>
