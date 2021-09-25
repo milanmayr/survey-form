@@ -8,7 +8,7 @@
   <meta name="description" content="">
   <meta name="author" content="">
 
-  <title>Lifestyle Survey</title>
+  <title>How Do You Ice Cream?</title>
 
   <!-- Bootstrap core CSS -->
   <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
@@ -30,7 +30,7 @@
   <!-- Navigation -->
   <nav class="navbar navbar-expand-lg navbar-light fixed-top" id="mainNav">
     <div class="container">
-      <a class="navbar-brand js-scroll-trigger" href="#page-top">Lifestyle</a>
+      <a class="navbar-brand js-scroll-trigger" href="/index.html">Milan May'r</a>
       <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse"
         data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false"
         aria-label="Toggle navigation">
@@ -43,10 +43,12 @@
             <a class="nav-link js-scroll-trigger" href="#survey">Survey</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link js-scroll-trigger" href="#contact">Contact</a>
+            <a class="nav-link js-scroll-trigger" href="#contact">Contact & Github <i class="fab fa-github"></i></a>
           </li>
+          <li class="nav-item">
         </ul>
       </div>
+      </a>
     </div>
   </nav>
 
@@ -54,8 +56,8 @@
   <header class="masthead">
     <div class="container d-flex h-100 align-items-center">
       <div class="mx-auto text-center">
-        <h1 id="title" class="mx-auto my-0 text-uppercase">lifestyle</h1>
-        <p id="description" class="text-white-50 mx-auto mt-2 mb-5">Questions about how you live it out</p>
+        <h1 id="title" class="mx-auto my-0 text-uppercase">Ice Cream</h1>
+        <p id="description" class="text-white-50 mx-auto mt-2 mb-5">How do you do it?</p>
         <a href="#survey" class="btn btn-primary js-scroll-trigger">Start survey</a>
       </div>
     </div>
@@ -64,53 +66,78 @@
   <!-- Survey Section -->
   <section id="survey" class="survey-section text-center">
     <div class="container">
+      <h2 class="text-white mb-4">Ice Cream</h2>
+      <p class="text-white-50">Answer a few questions about how you ice cream:</p>
       <div class="row">
-        <div class="col-lg-8 mx-auto">
-          <h2 class="text-white mb-4">Ice Cream</h2>
-          <p class="text-white-50">Answer a few questions about how you ice cream:</p>
+        <div class="col-lg-6 mx-auto">
           <form id="survey-form" class="text-white-50" style="text-align: left">
             <div class="form-group">
               <label for="name" id="name-label">Name</label>
               <input type="text" class="form-control" id="name" aria-describedby="nameHelp" required
                 placeholder="Enter name">
               <small id="nameHelp" class="form-text text-muted">This form isn't connected to anything, so don't worry &#8212; your information isn't being stored!</small>
+              <br>
               <label for="email" id="email-label">Email</label>
               <input type="email" class="form-control" id="email" required placeholder="you@example.com">
+              <br>
               <label for="number" id="number-label">Phone number</label>
               <input type="number" class="form-control" id="number" min="10" max="10" placeholder="(000) 000-0000">
+              <br>
               <label for="ice-cream" id="number-label">Do you like mint ice cream?</label>
               <select class="form-control" id="dropdown">
                 <option value="yes">yes</optionvalue>
                 </option>
                 <option value="no">no</optionvalue>
                 </option>
-              </select>
+              </select>          
+              <br>
+              Which topping is better?
+              <br>
+              <input type="radio" class="" id="chocolate-syrup-topping" value="chocolate"
+                name="toppings" style="text-align: left!important;">
+              <label for="chocolate-syrup-topping" id="toppings-label">Chocolate syrup</label>
+                <input type="radio" class="" id="espresso-topping" value="espresso"
+                name="toppings">
+              <label for="espresso-topping" id="espresso-label">Espresso</label>
+              
+              <br>
+              <br>
+              Select as many toppings as you want
+              <br>
+              <input type="checkbox" class="" id="chocolate-syrup-checkbox" value="chocolate"
+                name="checkboxes" style="text-align: left!important;">
+              <label for="chocolate-syrup-checkbox" id="toppings-label">Chocolate syrup</label>
+              <input type="checkbox" class="" id="espresso-checkbox" value="espresso"
+                name="checkboxes">
+              <label for="espresso-checkbox" id="espresso-checkbox-label">Espresso</label>
+              <input type="checkbox" class="" id="sprinkles-checkbox" value="sprinkles"
+                name="checkboxes">
+              <label for="sprinkles-checkbox" id="sprinkles-checkbox-label">Sprinkles</label>
+              <input type="checkbox" class="" id="nuts-checkbox" value="nuts"
+              name="checkboxes">
+              <label for="nuts-checkbox" id="nuts-checkbox-label">Nuts</label>
+              <br><br>
+              <label>Additional Notes</label>
+              <br>
+              <textarea></textarea>
+              <br><br>
+              <button id="submit" >Submit</button>
             </div>
           </form>
         </div>
       </div>
-      <div class="row mx-auto">
-        <p>Select your toppings</p>
-        <br>
-        <br>
-        <label for="chocolate-syrup-topping" id="toppings-label">Chocolate syrup
-        <input type="radio" class="form-control" id="chocolate-syrup-topping" value="chocolate"
-          name="chocolate" style="text-align: left!important;">
-        <label for="chocolate-syrup-topping" id="toppings-label">Espresso
-        <input type="radio" class="form-control" id="espresso-topping" value="espresso"
-          name="espresso">
-      </div>
+
       <img src="img/ipad.png" class="img-fluid" alt="">
     </div>
-  </section>d
+  </section>
 
   <!-- Contact Section -->
   <section id="contact" class="contact-section bg-black">
     <div class="container">
 
-      <div class="row">
+      <div class="row justify-content-center">
 
-        <div class="col-md-4 mb-3 mb-md-0">
+        <!-- <div class="col-md-4 mb-3 mb-md-0">
           <div class="card py-4 h-100">
             <div class="card-body text-center">
               <i class="fas fa-map-marked-alt text-primary mb-2"></i>
@@ -119,52 +146,53 @@
               <div class="small text-black-50">1234 Your Street, Town, ST</div>
             </div>
           </div>
-        </div>
+        </div> -->
 
-        <div class="col-md-4 mb-3 mb-md-0">
+        <div class="col-md-5 mb-2 mb-md-0">
           <div class="card py-4 h-100">
             <div class="card-body text-center">
               <i class="fas fa-envelope text-primary mb-2"></i>
               <h4 class="text-uppercase m-0">Email</h4>
               <hr class="my-4">
               <div class="small text-black-50">
-                <a href="#">you@example.com</a>
+                <a href="#">mayrmilan@gmail.com</a>
               </div>
             </div>
           </div>
         </div>
 
-        <div class="col-md-4 mb-3 mb-md-0">
+        <div class="col-md-5 mb-2 mb-md-0">
           <div class="card py-4 h-100">
             <div class="card-body text-center">
-              <i class="fas fa-mobile-alt text-primary mb-2"></i>
-              <h4 class="text-uppercase m-0">Phone</h4>
+              <i class="fab fa-github text-primary mb-2"></i>
+              <h4 class="text-uppercase m-0">Github</h4>
               <hr class="my-4">
-              <div class="small text-black-50">+1 (000) 000-0000</div>
+              <div class="small text-black-50">
+                <a href="https://github.com/milanmayr">@milanmayr</a>
+              </div>
             </div>
           </div>
         </div>
       </div>
 
-      <div class="social d-flex justify-content-center">
-        <a href="#" class="mx-2">
-          <i class="fab fa-twitter"></i>
-        </a>
-        <a href="#" class="mx-2">
-          <i class="fab fa-facebook-f"></i>
-        </a>
-        <a href="https://github.com/milanmayr" class="mx-2">
-          <i class="fab fa-github"></i>
-        </a>
-      </div>
-
     </div>
+    <!-- <div class="social d-flex justify-content-center">
+      <a href="#" class="mx-2">
+        <i class="fab fa-twitter"></i>
+      </a>
+      <a href="#" class="mx-2">
+        <i class="fab fa-facebook-f"></i>
+      </a>
+      <a href="https://github.com/milanmayr">
+        <i class="fab fa-github"></i>
+      </a>
+    </div>  -->
   </section>
 
   <!-- Footer -->
   <footer class="bg-black small text-center text-white-50">
     <div class="container">
-      Copyright &copy; Milan May'r 2020
+      Copyright &copy; Milan May'r 2021
     </div>
   </footer>
 
